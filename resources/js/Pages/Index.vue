@@ -6,7 +6,7 @@ import { Head } from '@inertiajs/vue3';
     <Head title="Welcome" />
 
     <div>
-        Hello Laravel + InertiaJS + Vue + Vuetify
+        Hello Laravel + InertiaJS + Vue + Vuetify in server side rendering
     </div>
     <v-color-picker></v-color-picker>
     <v-timeline direction="horizontal">
