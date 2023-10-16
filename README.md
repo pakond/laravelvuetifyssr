@@ -14,5 +14,5 @@ npm run dev & php artisan serve
 
 ## Run BUILD
 <p>
-php artisan inertia:start-ssr && php artisan serve
+php artisan inertia:start-ssr & php artisan serve
 </p>
