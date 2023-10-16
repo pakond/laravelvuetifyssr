@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { Head } from '@inertiajs/vue3';
+import { ref } from 'vue';
+    const snackbar = ref(false)
+    const text = "Hello, I'm a snackbar"
 </script>
 
 <template>
@@ -8,6 +11,26 @@ import { Head } from '@inertiajs/vue3';
     <div>
         Hello Laravel + InertiaJS + Vue + Vuetify in server side rendering
     </div>
+    <v-btn
+      @click="snackbar = true"
+    >
+      Open Snackbar
+    </v-btn>
+    <v-snackbar
+      v-model="snackbar"
+    >
+      {{ text }}
+
+      <template v-slot:actions>
+        <v-btn
+          color="pink"
+          variant="text"
+          @click="snackbar = false"
+        >
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
     <v-color-picker></v-color-picker>
     <v-timeline direction="horizontal">
     <v-timeline-item>
