@@ -1,5 +1,5 @@
 ## Description
-Project template with Laravel + InertiaJS + Vue + Vuetify
+Server side rendering with Laravel + InertiaJS + Vue + Vuetify
 
 ## Installation
 
